@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="/public/1.ico" type="image/x-icon">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.11.2/css/all.css" />
+    <link rel="stylesheet" href="/public/css/bootstrap.min.css">
+    <link rel="stylesheet" href="/public/css/marvel.css">
+    <title>اچ بی او</title>
+</head>
+<body style="background-color: #111111;" class="cover">
+    <!-- header start -->
+    <section style="display: contents;" class="banner">
+        <header class="nav-menu">
+            <a href="#" class="logo">click <big style="color: black;">FILM</big></a>
+            <div class="toggle" onclick="toggle();"></div>
+        </header>
+            <div class="filmBx">
+                <video autoplay="" muted="" loop="" src="/public/video/3.mp4"></video>
+            </div>
+        <ul class="sci">
+            <li><a href="#"><img src="/public/img/facebook.png"></a></li>
+            <li><a href="#"><img src="/public/img/twitter.png"></a></li>
+            <li><a href="#"><img src="/public/img/instagram.png"></a></li>
+        </ul>
+        <ul class="menu">
+            <li><a href="home.html">خانه</a></li>
+            <li><a href="serial.html">سریال</a></li>
+            <li><a href="film.html">فیلم</a></li>
+            <li><a href="home.html">کالکشن</a></li>
+        </ul>
+    </section>
+    <!-- header end -->
+    <!-- main start -->
+    <section class="fullpart">
+        <div class="row">
+            <div class="col-lg-6">
+                <div class="card mt-5">
+                    <div class="content">
+                        <h2>بازی تاج‌وتخت</h2>
+                        <p class="">داستان زمانی آغاز می‌شود که تمامی هفت اقلیم در اتحاد به سر می‌برند. تابستانی طولانی وستروس را دربر گرفته و انتظار می‌رود که به‌زودی پایان یابد. اما با مرگ دستِ شاه (دستیار و مشاور اعظم) اوضاع به‌سرعت تغییر می‌کند</p>
+                        <a href="#">دانلود فیلم</a>
+                    </div>
+                    <img src="/public/img/home/hbo/1.png" alt="" class="award-img">
+                </div>
+            </div>
+            <div class="col-lg-6">
+                <div class="card mt-5">
+                    <div class="content">
+                        <h2>وست‌ورلد</h2>
+                        <p>در این بخش از سریال آرنولد (جفری رایت)، دلورس (ایوان ریچل وود) را وارد دنیای واقعی می‌کند و به نظر می‌رسد آنها در توکیو قرار دارند. آرنولد، خانه خود را به دلورس نشان می‌دهد و از شباهت‌های او به پسرش چارلی صحبت می‌کند</p>
+                        <a href="#">دانلود فیلم</a>
+                    </div>
+                    <img src="/public/img/home/hbo/2.png" alt="" class="award-img">
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- main end -->
+    <script type="text/javascript">
+        function toggle(){
+            const toggle = document.querySelector('.toggle');
+            const banner = document.querySelector('.banner');
+            toggle.classList.toggle('active')
+            banner.classList.toggle('active')
+        }
+    </script>
+        <script type="text/javascript">
+            let video = document.querySelector('video');
+            window.addEventListener('scroll',function(){
+                let value =1 + window.scrollY/-600;
+                video.style.opacity=value
+            })
+        </script>
+    <script src="/public/js/jquery-3.5.1.slim.min.js"></script>
+    <script src="/public/js/bootstrap.bundle.min.js"></script>
+    <script src="/public/js/home.js"></script>
+</body>
+</html>
